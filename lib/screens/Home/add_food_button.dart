@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_fitguru/constant/color.dart';
+import 'file:///G:/Installedfiles/Androidstudio/flutterprojects/flutter_app_fitguru/lib/foodlist/foodslist.dart';
+import 'package:flutter_app_fitguru/screens/profile.dart';
 
 
 class Addbutton extends StatefulWidget {
@@ -32,6 +34,10 @@ class _AddbuttonState extends State<Addbutton> {
               ),
               color: Colors.white,
               onPressed: () async {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                  return foodlist();
+
+                }));
 
               },
               child: Text(

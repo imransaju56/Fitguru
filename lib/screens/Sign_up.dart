@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_fitguru/constant/color.dart';
+import 'package:flutter_app_fitguru/services/auth.dart';
 
 
 class Sign_up extends StatefulWidget {
@@ -15,6 +16,8 @@ class _Sign_upState extends State<Sign_up> {
   String password = '';
   String error = '';
   bool _obscureText = true;
+
+  Authentication_service _authservice = Authentication_service();
 
 
   final _formkey = GlobalKey<FormState>();
@@ -119,21 +122,19 @@ class _Sign_upState extends State<Sign_up> {
                             borderRadius: BorderRadius.circular(5.0),
                           ),
                           color: cons_color,
-                          onPressed: () {},
-                          //
-                          // async {
-                          //   if (_formkey.currentState.validate()) {
-                          //     dynamic result = await _authservice
-                          //         .Register_with_email_password(Email, password);
-                          //     if (result == null) {
-                          //       setState(() {
-                          //         error='Please supply a valid email address';
-                          //       });
-                          //     } else {
-                          //       print('Registration Successful');
-                          //     }
-                          //   }
-                          // },
+                          onPressed: () async {
+                            if (_formkey.currentState.validate()) {
+                              dynamic result = await _authservice
+                                  .Register_with_email_password(Email, password);
+                              if (result == null) {
+                                setState(() {
+                                  error='Please supply a valid email address';
+                                });
+                              } else {
+                                print('Registration Successful');
+                              }
+                            }
+                          },
                           child: Text(
                             'Sign Up',
                             style: TextStyle(

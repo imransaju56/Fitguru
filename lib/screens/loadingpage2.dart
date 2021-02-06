@@ -1,20 +1,22 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_app_fitguru/constant/color.dart';
+import 'package:flutter_app_fitguru/screens/Home/home.dart';
 import 'package:flutter_app_fitguru/screens/welcome_page/layout.dart';
 
-class loading extends StatefulWidget {
+class loadingtwo extends StatefulWidget {
   @override
-  _loadingState createState() => _loadingState();
+  _loadingtwoState createState() => _loadingtwoState();
 }
 
-class _loadingState extends State<loading> {
+class _loadingtwoState extends State<loadingtwo> {
 
   @override
   void initState() {
     Timer(Duration(seconds: 3),()=>Navigator.push(context,
         MaterialPageRoute(builder: (context)
-        => welcomepage(),
+        => Home(),
         )));
     super.initState();
   }

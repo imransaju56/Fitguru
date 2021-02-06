@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_fitguru/constant/color.dart';
+import 'package:flutter_app_fitguru/services/auth.dart';
 
 class login_ui extends StatefulWidget {
   final Function toggleview;
@@ -17,6 +18,7 @@ class _login_uiState extends State<login_ui> {
 
   bool _obscureText = true;
   final _formkey = GlobalKey<FormState>();
+  Authentication_service _authentication_service = Authentication_service();
 
   @override
   Widget build(BuildContext context) {
@@ -117,19 +119,19 @@ class _login_uiState extends State<login_ui> {
                               ),
                               color: cons_color,
                               onPressed: () async {
-                                // if (_formkey.currentState.validate()) {
-                                //   dynamic result = await _authentication_service
-                                //       .SignIn_with_Email_password(
-                                //       Email, password);
-                                //
-                                //   print("login successful");
-                                //
-                                //   if (result == null) {
-                                //     error = 'Please enter a valid email address';
-                                //   } else {
-                                //     print("Log in Successful");
-                                //   }
-                                // }
+                                if (_formkey.currentState.validate()) {
+                                  dynamic result = await _authentication_service
+                                      .SignIn_with_Email_password(
+                                      Email, password);
+
+                                  print("login successful");
+
+                                  if (result == null) {
+                                    error = 'Please enter a valid email address';
+                                  } else {
+                                    print("Log in Successful");
+                                  }
+                                }
                               },
                               child: Text(
                                 'Log in',
@@ -188,20 +190,8 @@ class _login_uiState extends State<login_ui> {
                             borderRadius: BorderRadius.circular(5.0),
                           ),
                           color: Colors.white,
-                          onPressed: () async {
-                            // if (_formkey.currentState.validate()) {
-                            //   dynamic result = await _authentication_service
-                            //       .SignIn_with_Email_password(
-                            //       Email, password);
-                            //
-                            //   print("login successful");
-                            //
-                            //   if (result == null) {
-                            //     error = 'Please enter a valid email address';
-                            //   } else {
-                            //     print("Log in Successful");
-                            //   }
-                            // }
+                          onPressed: ()  {
+
                           },
                           child: Row(
                             children: [

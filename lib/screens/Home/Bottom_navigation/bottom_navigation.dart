@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_fitguru/constant/color.dart';
+import 'package:flutter_app_fitguru/screens/profile.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 
@@ -50,7 +51,7 @@ class _bottom_navState extends State<bottom_nav> {
           IconButton(
             onPressed: (){
               Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                return ;
+                return profile();
 
               }));
 

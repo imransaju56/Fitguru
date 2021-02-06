@@ -17,7 +17,7 @@ class _slider_welState extends State<slider_wel> {
         Padding(
           padding: const EdgeInsets.fromLTRB(70.0, 70.0, 70.0, 40.0),
           child: Image.asset(
-            "assets/images/load.png",
+            "assets/images/sliderimage.png",
           ),
         ),
         Padding(

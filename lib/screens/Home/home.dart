@@ -8,6 +8,8 @@ import 'package:flutter_app_fitguru/screens/Home/add_food_button.dart';
 import 'package:flutter_app_fitguru/screens/Home/card.dart';
 
 class Home extends StatefulWidget {
+  num cal;
+
   @override
   _HomeState createState() => _HomeState();
 }

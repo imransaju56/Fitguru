@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_fitguru/constant/Sizeconfig.dart';
+import 'package:flutter_app_fitguru/constant/color.dart';
+import 'package:flutter_app_fitguru/services/auth.dart';
 
 class profile extends StatefulWidget {
   @override
@@ -9,6 +11,7 @@ class profile extends StatefulWidget {
 class _profileState extends State<profile> {
   @override
   Widget build(BuildContext context) {
+    Authentication_service _auth= Authentication_service();
 
 
     Sizeconfig().init(context);
@@ -22,8 +25,9 @@ class _profileState extends State<profile> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(5.0),
             ),
-            color: Colors.blue,
+            color: cons_color,
             onPressed: () {
+              _auth.Signout();
 
             },
             child: Text(

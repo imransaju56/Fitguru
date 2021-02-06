@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1088343766943",
+    "firebase_url": "https://testapps-5b226.firebaseio.com",
+    "project_id": "testapps-5b226",
+    "storage_bucket": "testapps-5b226.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088343766943:android:3fa4d73c3a579f9e972faa",
+        "android_client_info": {
+          "package_name": "com.example.brew_crew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088343766943-7fid4rh2fbuujlnjdc9la9qmu5b0b5os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6UgFdkACMVmfVSx3Bl-HfFsAcnmufrk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088343766943-7fid4rh2fbuujlnjdc9la9qmu5b0b5os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088343766943:android:5ca8db22b889c1cc972faa",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_fitguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088343766943-7fid4rh2fbuujlnjdc9la9qmu5b0b5os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6UgFdkACMVmfVSx3Bl-HfFsAcnmufrk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088343766943-7fid4rh2fbuujlnjdc9la9qmu5b0b5os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088343766943:android:1d1feee65235f974972faa",
+        "android_client_info": {
+          "package_name": "com.example.simple_post_app_with_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088343766943-7fid4rh2fbuujlnjdc9la9qmu5b0b5os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6UgFdkACMVmfVSx3Bl-HfFsAcnmufrk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088343766943-7fid4rh2fbuujlnjdc9la9qmu5b0b5os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
